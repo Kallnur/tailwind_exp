@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="light" style="font-size: 16px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Talewind</title>
+</head>
+<body class="dark:bg-black text-darkColor font-mainFamily">
+    <header class="border-b border-gray">
+        <div class="container mx-auto">
+            <div class="flex items-center py-6 justify-between">
+                <div class="logo">
+                    <a href="/src/index.html">
+                        <img src="./assets/icons/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <nav class="hidden md:flex  items-center gap-x-5">
+                    <ul class="links flex items-center gap-x-5 ">
+                        <li class="text-whiteColor">
+                            <a class="font-medium py-2.5 px-8 bg-mainColor rounded-md text-lg" href="./pages/profile.html">Регистрация</a>
+                        </li>
+                        <li>
+                            <a class="font-medium py-2.5 px-8 border-solid border border-darkColor rounded-md text-lg" href="./pages/profile.html">Вход</a>
+                        </li>
+                    </ul>
+                    <div class="language border border-gray px-3 py-2.5 rounded-md cursor-pointer" id="select-language">
+                        <div class="option flex gap-x-2">
+                            <img src="./assets/icons/italian.svg" alt="italian">
+                            <img src="./assets/icons/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="chame-mode cursor-pointer">
+                        <img src="./assets/icons/dark.svg" alt="">
+                    </div>
+                </nav>
+                <div class="md:hidden">
+                    <button>
+                        <img class="w-[38px]" src="/src/assets/icons/burger.svg" alt="burger">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner pt-14 pb-6">
+            <div class="container mx-auto">
+                <div class="flex justify-between gap-8 xl:flex-row flex-col">
+                    <div class="xl:w-3/4 w-full border border-gray rounded-lg">
+                        <ul class="slider">
+                            <div id="default-carousel" class="relative" data-carousel="static">
+                                <div class="relative overflow-hidden rounded-lg">
+                                    <div class="duration-700 ease-in-out min-h-full" data-carousel-item>
+                                        <img src="./assets/image/sliderBg.jpg" class="block w-full min-h-[250px]" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                                    <button type="button" class="w-3 h-3 rounded-full bg-mainColor"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full bg-whiteColor"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full bg-whiteColor"></button>
+                                </div>
+                            </div>
+                        </ul>
+                        <div class="p-8">
+                            <h2 class="text-3xl font-bold mb-2">Заголовок рекламного баннера</h2>
+                            <div class="flex items-end justify-between gap-x-2">
+                                <p class="text-lg w-4/5">Описание рекламного баннера описание рекламного баннера описание рекламного баннера описание рекламного баннера описание рекламного баннера описание рекламного баннера описание </p>
+                                <a href="#" class="flex gap-x-2 text-mainColor items-center w-1/5 justify-end">
+                                    <span>Перейти</span>
+                                    <img src="./assets/icons/followArrow.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 w-full">
+                        <ul class="flex xl:flex-col gap-8">
+                            <li class="flex flex-col p-8 border border-gray rounded-lg w-1/2 xl:w-full">
+                                <span class="text-lg border-b border-gray pb-2 mb-5">Моделей онлайн</span>
+                                <span class="text-6xl font-bold text-mainColor">82</span>
+                            </li>
+                            <li class="flex flex-col p-8 border border-gray rounded-lg w-1/2 xl:w-full">
+                                <span class="text-lg border-b border-gray pb-2 mb-5">Моделей онлайн</span>
+                                <span class="text-6xl font-bold text-mainColor">82</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories pb-10">
+            <div class="container mx-auto">
+                <div>
+                    <ul class="flex gap-6 flex-wrap">
+                        <li class="border border-gray px-3 py-2.5 rounded-md cursor-pointer">
+                            <div class="option flex gap-x-2">
+                                <span>Willingness</span>
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </li>
+                        <li class="border border-gray px-3 py-2.5 rounded-md cursor-pointer">
+                            <div class="option flex gap-x-2">
+                                <span>Language</span>
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </li>
+                        <li class="border border-gray px-3 py-2.5 rounded-md cursor-pointer">
+                            <div class="option flex gap-x-2">
+                                <span>Age</span>
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="galereya pb-10">
+            <div class="container mx-auto">
+                <div class="flex gap-8">
+                    <ul class="w-full flex flex-wrap xl:grid xl:grid-rows-2 xl:grid-cols-4 justify-between items-center gap-8 min-h-full">
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-2 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:row-end-2 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="w-full xl:h-full relative xl:col-start-3 xl:col-end-5 xl:row-start-1 xl:row-end-2 w-ad rounded-md ">
+                            <div class="relative h-full">
+                                <img class="rounded-md h-full w-full" src="./assets/image/adBanner.jpg" alt="banner">
+                            </div>
+                        </li>
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-1 xl:col-end-2 xl:row-start-2 xl:row-end-3 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="w-full sm:w-[47.5%] xl:w-auto xl:h-full relative xl:col-start-4 xl:col-end-5 xl:row-start-2 xl:row-end-3 border border-gray rounded-md">
+                            <div class="relative">
+                                <img class="w-full h-full" src="./assets/image/men.jpg" alt="image">
+                                <div class="flex absolute top-5 left-0 text-whiteColor w-full items-center justify-between">
+                                    <span class="text-xs rounded-r font-medium bg-mainColor py-1.5 px-6 ">
+                                        PROMO
+                                    </span>
+                                    <span class="py-1.5 px-6 cursor-pointer">
+                                        <img src="./assets/icons/heart.svg" alt="favorite">
+                                    </span>
+                                </div>
+                                <div class="flex absolute px-4 bottom-5 left-0 text-whiteColor w-full items-end justify-between">
+                                    <div class="">
+                                        <div class="mb-4"><img src="./assets/icons/microphone.png" alt="icon"></div>
+                                        <img src="./assets/icons/cam.png" alt="icon">
+                                    </div>
+                                    <img src="./assets/icons/italian.svg" alt="flag">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-6">
+                                <div>
+                                    <strong class="block text-xl">KitaMorika</strong>
+                                    <span class="text-lg border-l-2 border-green pl-2">FREE</span>
+                                </div>
+                                <div class="flex items-center gap-2 font-medium">
+                                    <img src="./assets/icons/users.svg" alt="icon">
+                                    <span>436,7K</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-gray pt-[70px]">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap md:justify-between">
+                <div class="w-full md:w-1/4 pr-10 text-center md:text-left mb-5 md:mb-0">
+                    <a class="block mb-5" href="#">
+                        <img class="mx-auto md:mx-0" src="./assets/icons/footerLogo.svg" alt="Logo">
+                    </a>
+                    <span>Прежде всего, убеждённость некоторых оппонентов позволяет оценить значение первоочередных требований.</span>
+                </div>
+                <div class="w-full md:w-3/4 flex gap-14 md:gap-28 pl-10 justify-start flex-wrap">
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #1</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px] font-semibold"><a href="#">Стать моделью</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #2</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #3</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-silverColor py-10">Streaming service © 2021–2022. Все права защищены.</p>
+        </div>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="light" style="font-size: 16px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/fonts.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Profile</title>
+</head>
+<body class="dark:bg-black text-darkColor font-mainFamily">
+    <header class="border-b border-gray">
+        <div class="container mx-auto">
+            <div class="flex items-center py-6 justify-between gap-12">
+                <div class="logo">
+                    <a href="/src/index.html">
+                        <img src="/src/assets/icons/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="mr-auto flex items-center gap-12">
+                    <a href="#" class="font-medium">Библиотека</a>
+                    <div class="flex items-center py-2 px-3 rounded-lg gap-2 border border-gray">
+                        <img src="/src/assets/icons/profile/search.svg" alt="search">
+                        <input type="text" class="outline-0 border-none" placeholder="Поиск...">
+                    </div>
+                </div>
+                <nav class="hidden lg:flex items-center gap-x-5">
+                    <ul class="links flex items-center gap-x-5 ">
+                        <li class="text-whiteColor">
+                            <a href="#">
+                                <img src="/src/assets/icons/profile/message.svg" alt="message">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/src/assets/icons/profile/notification.svg" alt="message">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/src/assets/icons/profile/heart.svg" alt="message">
+                            </a>
+                        </li>
+                        <li class="border border-gray px-3 py-2.5 rounded-md cursor-pointer">
+                            <div class="option flex gap-x-4 items-center">
+                                <img src="/src/assets/icons/profile/user.svg" alt="">
+                                <span>Anastasia Sivk.</span>
+                                <img src="/src/assets/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="language border border-gray px-3 py-2.5 rounded-md cursor-pointer" id="select-language">
+                        <div class="option flex gap-x-2">
+                            <img src="/src/assets/icons/italian.svg" alt="italian">
+                            <img src="/src/assets/icons/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="chame-mode cursor-pointer">
+                        <img src="/src/assets/icons/dark.svg" alt="">
+                    </div>
+                </nav>
+                <div class="lg:hidden">
+                    <button>
+                        <img class="w-[38px]" src="/src/assets/icons/burger.svg" alt="burger">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="my-[40px]">
+            <div class="container mx-auto">
+                <ul class="p-[2px] w-full lg:w-fit flex gap-3 items-center border border-gray rounded-md justify-end lg:justify-start">
+                    <li class="w-full lg:w-auto text-center">
+                        <a href="#" class="text-whiteColor rounded-lg py-4 px-16 bg-mainColor flex gap-3 items-center justify-center font-medium">
+                            <img src="/src/assets/icons/profile/profile.svg" alt=""> Мой профиль
+                            <div class="block lg:hidden">
+                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.0303 1.78033C17.3232 1.48744 17.3232 1.01256 17.0303 0.71967C16.7374 0.426777 16.2626 0.426777 15.9697 0.71967L17.0303 1.78033ZM9 8.75L8.46967 9.28033C8.76256 9.57322 9.23744 9.57322 9.53033 9.28033L9 8.75ZM2.03033 0.719671C1.73744 0.426777 1.26256 0.426777 0.96967 0.719671C0.676777 1.01256 0.676777 1.48744 0.96967 1.78033L2.03033 0.719671ZM15.9697 0.71967L8.46967 8.21967L9.53033 9.28033L17.0303 1.78033L15.9697 0.71967ZM9.53033 8.21967L2.03033 0.719671L0.96967 1.78033L8.46967 9.28033L9.53033 8.21967Z" fill="#fff"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="w-auto text-center hidden lg:block">
+                        <a href="#" class="rounded-lg py-4 px-16 flex gap-3 items-center justify-center font-medium">
+                            <img src="/src/assets/icons/profile/cash.svg" alt=""> Финансы
+                        </a>
+                    </li>
+                    <li class="w-auto text-center hidden lg:block">
+                        <a href="#" class="rounded-lg py-4 px-16 flex gap-3 items-center justify-center font-medium">
+                            <img src="/src/assets/icons/profile/lybrary.svg" alt=""> Библиотека
+                        </a>
+                    </li>
+                    <li class="w-auto text-center hidden lg:block">
+                        <a href="#" class="rounded-lg py-4 px-16 flex gap-3 items-center justify-center font-medium">
+                            <img src="/src/assets/icons/profile/settings.svg" alt=""> Настройки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="container mx-auto">
+                <div class="p-10 flex flex-wrap xl:flex-nowrap ls:gap-20 border border-gray rounded-lg mb-10">
+                    <div class="w-full lg:w-1/5 flex lg:block items-center justify-evenly">
+                        <div class="mb-6 flex flex-col items-center">
+                            <img src="/src/assets/image/avatar.png" class="w-[200px]" alt="avatar">
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <button class="text-whiteColor rounded-lg box-border py-3 px-8 bg-mainColor font-medium">Редактировать профиль</button>
+                            <span class="text-silverColor text-base">Дата регистрации: 03.09.2022</span>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[70%] xl:w-[45%]">
+                        <h3 class="mb-8 text-2xl w-fit font-semibold pb-1 border-b-4 border-mainColor">SoungI</h3>
+                        <ul class="flex flex-wrap gap-y-5 gap-x-10 w-full justify-start">
+                            <li class="flex flex-col w-[80%]">
+                                <span class="text-lg text-silverColor">Email</span>
+                                <span class="text-lg font-medium">soungI@com</span>
+                            </li>
+                            <li class="flex flex-col w-[35%]">
+                                <span class="text-lg text-silverColor">First name</span>
+                                <span class="text-lg font-medium">Stive</span>
+                            </li>
+                            <li class="flex flex-col w-[35%]">
+                                <span class="text-lg text-silverColor">Last name</span>
+                                <span class="text-lg font-medium">Stivenson</span>
+                            </li>
+                            <li class="flex flex-col w-[35%]">
+                                <span class="text-lg text-silverColor">sex</span>
+                                <span class="text-lg font-medium">male</span>
+                            </li>
+                            <li class="flex flex-col w-[45%]">
+                                <span class="text-lg text-silverColor">Marital status</span>
+                                <span class="text-lg font-medium">single</span>
+                            </li>
+                            <li class="flex flex-col w-full">
+                                <span class="text-lg text-silverColor">Biography</span>
+                                <span class="text-lg font-medium">Прежде всего, современная методология разработки создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса первоочередных требований. Прежде всего, современная методология разработки создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса первоочередных требований.  Прежде всего, современная методология разработки создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса первоочередных требований. Прежде всего, современная методология разработки создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса первоочередных требований.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="xl:w-auto">
+                        <h3 class="text-lg text-silverColor mb-2">Willingness</h3>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-5 py-3 bg-slate-100 rounded-lg text-base  font-semibold">ASMR</li>
+                            <li class="px-5 py-3 bg-slate-100 rounded-lg text-base  font-semibold">Anal Sex</li>
+                            <li class="px-5 py-3 bg-slate-100 rounded-lg text-base  font-semibold">Cosplay</li>
+                            <li class="px-5 py-3 bg-slate-100 rounded-lg text-base  font-semibold">Dominant</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-[120px]">
+            <div class="container mx-auto">
+                <div >
+                    <div class="md:w-auto flex gap-5 border border-gray rounded-lg p-1 w-fit mb-10">
+                        <button class="font-medium box-border px-16 py-4 flex items-center gap-[12px] rounded-lg">
+                            <svg width="18" height="16" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.6538 8.375C28.6538 4.64708 25.5058 1.625 21.6226 1.625C18.7191 1.625 16.2267 3.31442 15.1538 5.72513C14.0809 3.31442 11.5885 1.625 8.68506 1.625C4.80181 1.625 1.65381 4.64708 1.65381 8.375C1.65381 19.2058 15.1538 26.375 15.1538 26.375C15.1538 26.375 28.6538 19.2058 28.6538 8.375Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Отслеживаемые
+                        </button>
+                        <button class="font-medium bg-mainColor box-border px-16 py-4 flex items-center gap-[12px] text-whiteColor rounded-lg">
+                            <img src="/src/assets/icons/profile/followers.svg" alt="icon"> Подписки
+                        </button>
+                    </div>
+                    <ul class="flex justify-start xl:justify-between gap-6 xl:gap-4 flex-wrap">
+                        <li class="p-6 pt-9 border border-gray rounded-lg w-[48%] md:w-[31%] xl:w-[23.5%] 2xl:w-[18%] relative">
+                            <span class="py-1 px-6 bg-[#EB5757] text-xs text-whiteColor absolute top-4 rounded-l right-0">LIVE</span>
+                            <div class="flex items-center gap-6">
+                                <div>
+                                    <img src="/src/assets/image/pers.png" alt="avatar">
+                                </div>
+                                <div class="flex flex-col">
+                                    <strong class="text-lg">KitaMariko</strong>
+                                    <span class="text-silverColor">32k подписчиков</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-[12px] relative">
+                                <button class="absolute left-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/prev.svg" alt="prev">
+                                </button>
+                                <div class="slider overflow-scroll w-[80%] mx-auto">
+                                    <ul class="flex gap-2">
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                    </ul>
+                                </div>
+                                <button class="absolute right-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/next.svg" alt="next">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-medium mb-[12px] inline-block">
+                                    Вы подписаны <span class="text-mainColor">3 месяца</span>
+                                </span>
+                                <button class="w-full py-2 border rounded-lg border-mainColor font-medium text-lg text-mainColor">
+                                    Отменить подписку
+                                </button>
+                                <span class="text-sm text-silverColor mt-4 inline-block">
+                                    Следующее списание: <span class="text-darkColor">21.07.2022</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="p-6 pt-9 border border-gray rounded-lg w-[48%] md:w-[31%] xl:w-[23.5%] 2xl:w-[18%] relative">
+                            <span class="py-1 px-6 bg-[#EB5757] text-xs text-whiteColor absolute top-4 rounded-l right-0">LIVE</span>
+                            <div class="flex items-center gap-6">
+                                <div>
+                                    <img src="/src/assets/image/pers.png" alt="avatar">
+                                </div>
+                                <div class="flex flex-col">
+                                    <strong class="text-lg">KitaMariko</strong>
+                                    <span class="text-silverColor">32k подписчиков</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-[12px] relative">
+                                <button class="absolute left-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/prev.svg" alt="prev">
+                                </button>
+                                <div class="slider overflow-scroll w-[80%] mx-auto">
+                                    <ul class="flex gap-2">
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                    </ul>
+                                </div>
+                                <button class="absolute right-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/next.svg" alt="next">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-medium mb-[12px] inline-block">
+                                    Вы подписаны <span class="text-mainColor">3 месяца</span>
+                                </span>
+                                <button class="w-full py-2 border rounded-lg border-mainColor font-medium text-lg text-mainColor">
+                                    Отменить подписку
+                                </button>
+                                <span class="text-sm text-silverColor mt-4 inline-block">
+                                    Следующее списание: <span class="text-darkColor">21.07.2022</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="p-6 pt-9 border border-gray rounded-lg w-[48%] md:w-[31%] xl:w-[23.5%] 2xl:w-[18%] relative">
+                            <span class="py-1 px-6 bg-none text-xs text-darkColor absolute top-4 rounded-l right-0 border border-darkColor border-r-0">OFFLINE</span>
+                            <div class="flex items-center gap-6">
+                                <div>
+                                    <img src="/src/assets/image/pers.png" alt="avatar">
+                                </div>
+                                <div class="flex flex-col">
+                                    <strong class="text-lg">KitaMariko</strong>
+                                    <span class="text-silverColor">32k подписчиков</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-[12px] relative">
+                                <button class="absolute left-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/prev.svg" alt="prev">
+                                </button>
+                                <div class="slider overflow-scroll w-[80%] mx-auto">
+                                    <ul class="flex gap-2">
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                    </ul>
+                                </div>
+                                <button class="absolute right-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/next.svg" alt="next">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-medium mb-[12px] inline-block">
+                                    Вы подписаны <span class="text-mainColor">3 месяца</span>
+                                </span>
+                                <button class="w-full py-2 border rounded-lg border-mainColor font-medium text-lg text-mainColor">
+                                    Отменить подписку
+                                </button>
+                                <span class="text-sm text-silverColor mt-4 inline-block">
+                                    Следующее списание: <span class="text-darkColor">21.07.2022</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="p-6 pt-9 border border-gray rounded-lg w-[48%] md:w-[31%] xl:w-[23.5%] 2xl:w-[18%] relative">
+                            <span class="py-1 px-6 bg-[#EB5757] text-xs text-whiteColor absolute top-4 rounded-l right-0">LIVE</span>
+                            <div class="flex items-center gap-6">
+                                <div>
+                                    <img src="/src/assets/image/pers.png" alt="avatar">
+                                </div>
+                                <div class="flex flex-col">
+                                    <strong class="text-lg">KitaMariko</strong>
+                                    <span class="text-silverColor">32k подписчиков</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-[12px] relative">
+                                <button class="absolute left-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/prev.svg" alt="prev">
+                                </button>
+                                <div class="slider overflow-scroll w-[80%] mx-auto">
+                                    <ul class="flex gap-2">
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                    </ul>
+                                </div>
+                                <button class="absolute right-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/next.svg" alt="next">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-medium mb-[12px] inline-block">
+                                    Вы подписаны <span class="text-mainColor">3 месяца</span>
+                                </span>
+                                <button class="w-full py-2 border rounded-lg border-mainColor font-medium text-lg text-mainColor">
+                                    Отменить подписку
+                                </button>
+                                <span class="text-sm text-silverColor mt-4 inline-block">
+                                    Следующее списание: <span class="text-darkColor">21.07.2022</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="p-6 pt-9 border border-gray rounded-lg w-[48%] md:w-[31%] xl:w-[23.5%] 2xl:w-[18%] relative">
+                            <span class="py-1 px-6 bg-none text-xs text-darkColor absolute top-4 rounded-l right-0 border border-darkColor border-r-0">OFFLINE</span>
+                            <div class="flex items-center gap-6">
+                                <div>
+                                    <img src="/src/assets/image/pers.png" alt="avatar">
+                                </div>
+                                <div class="flex flex-col">
+                                    <strong class="text-lg">KitaMariko</strong>
+                                    <span class="text-silverColor">32k подписчиков</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-[12px] relative">
+                                <button class="absolute left-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/prev.svg" alt="prev">
+                                </button>
+                                <div class="slider overflow-scroll w-[80%] mx-auto">
+                                    <ul class="flex gap-2">
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                        <li class="px-4 py-2 bg-lightSilver whitespace-nowrap w-fit font-medium">Close-up</li>
+                                    </ul>
+                                </div>
+                                <button class="absolute right-0 top-1/2 translate-y-[-50%]">
+                                    <img src="/src/assets/icons/profile/next.svg" alt="next">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-medium mb-[12px] inline-block">
+                                    Вы подписаны <span class="text-mainColor">3 месяца</span>
+                                </span>
+                                <button class="w-full py-2 border rounded-lg border-mainColor font-medium text-lg text-mainColor">
+                                    Отменить подписку
+                                </button>
+                                <span class="text-sm text-silverColor mt-4 inline-block">
+                                    Следующее списание: <span class="text-darkColor">21.07.2022</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-gray pt-[70px]">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap md:justify-between">
+                <div class="w-full md:w-1/4 pr-10 text-center md:text-left mb-5 md:mb-0">
+                    <a class="block mb-5" href="#">
+                        <img class="mx-auto md:mx-0" src="/src/assets/icons/footerLogo.svg" alt="Logo">
+                    </a>
+                    <span>Прежде всего, убеждённость некоторых оппонентов позволяет оценить значение первоочередных требований.</span>
+                </div>
+                <div class="w-full md:w-3/4 flex gap-14 md:gap-28 pl-10 justify-start flex-wrap">
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #1</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px] font-semibold"><a href="#">Стать моделью</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #2</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-semibold font-secondFamily mb-3">Раздел #3</li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №1</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                        <li class="mb-[6px]"><a href="#">Ссылка на страницу №2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-silverColor py-10">Streaming service © 2021–2022. Все права защищены.</p>
+        </div>
+    </footer> 
+</body>
+</html>
